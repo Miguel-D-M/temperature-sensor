@@ -1,21 +1,26 @@
 # Kata
 
-## **Objectifs**
+## **Objectives**
 
-- Montrer ce que vous savez faire dans un temps raisonnable et voir comment vous codez dans la vraie vie.
-- Faire une PR sur la branche **main** afin que nous puissions faire des commentaires.
-- Il s’agit d’un projet que devrait bientôt partir en **production** en ce qui concerne à la qualité du code.
+- Demonstrate what you can do within a reasonable time and show how you code in real-life situations.
+- This project should soon go into production regarding the quality of the code.
+- The API must adhere to a Hexagonal or Clean Code architecture and must include tests.
 
-Dans le cadre de ce projet, nous souhaitons avoir une Api :
+## **Delivery**
+- Fork this repo and create a PR on the `main` branch so that we can provide feedback.
 
-1. Je veux que mon sensor récupère la température provenant du composant `TemperatureSensor` (renvoi la température en degrés Celsius).
-2. Je veux que l'état de mon Sensor soit à "HOT" lorsque la température captée est supérieure ou égale a 35°C.
-3. Je veux l'état de mon Sensor soit à "COLD" lorsque la température captée est inférieur a 22°C.
-4. Je veux l'état de mon Sensor soit à "WARM" lorsque la température captée est entre 22°C et inférieur à 35°C.
-5. Je veux récupérer l'historique des quinze dernières demandes des températures.
-6. Je veux pouvoir redéfinir les limites pour "HOT", "COLD", "WARM".
+## **Application**
+For this project, we need an API that:
 
-## **Stack Obligatoire**
+1. Retrieves the temperature from a `TemperatureSensor` component (returns the temperature in degrees Celsius).
+2. Sets the state of the Sensor to “HOT” when the captured temperature is greater than or equal to 35°C.
+3. Sets the state of the Sensor to “COLD” when the captured temperature is less than 22°C.
+4. Sets the state of the Sensor to “WARM” when the captured temperature is greather than or equal to 22°C and less than 35°C.
+5. Retrieves the history of the last fifteen temperature requests.
+6. Allows redefining the thresholds for “HOT”, “COLD”, and “WARM”.
+
+
+## **Minimal Stack**
 
 - Node.js
 - Docker
